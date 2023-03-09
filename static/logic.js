@@ -1,5 +1,5 @@
 // Name of the chatbot
-var name = "Larsbot";
+var name = "BotBertil";
 // Loading-icon
 var loading = false;
 
