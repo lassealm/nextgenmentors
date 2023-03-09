@@ -11,7 +11,8 @@ function init() {
 
 // Makes a POST request to the service
 function make_post_request(url, func, id) {
-	let q = document.getElementById(id).value;
+	let q = document.getElementById(id).value.trim();
+	console.log("'" + q + "'");
 	if (q == "") {
 		return;
 	}
@@ -47,7 +48,11 @@ function change_bg(id) {
 
 document.onkeyup = function(e) {
 	if (e.ctrlKey) {
-		console.log(e.key);
 		change_bg(e.key);
+	}
+	if (e.shiftKey) {
+		if (e.key == "Enter") {
+			make_post_request('ask', ask, 'q');
+		}
 	}
 }
