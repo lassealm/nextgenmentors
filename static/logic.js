@@ -54,5 +54,8 @@ document.onkeyup = function(e) {
 		if (e.key == "Enter") {
 			make_post_request('ask', ask, 'q');
 		}
+		if (e.key == "C") {
+			init();
+		}
 	}
 }
