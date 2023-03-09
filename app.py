@@ -3,7 +3,7 @@ import openai
 
 
 # API-key
-openai.api_key = "..."
+openai.api_key = "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"
 
 
 # Flask application settings
@@ -28,7 +28,6 @@ def clear():
     messages = [
         {"role": "system", "content": "Du är en hjälpsam assistent."},
     ]
-    print(messages)
     return jsonify({"status": "ok"})
 
 
@@ -62,8 +61,6 @@ def request_ask():
         if "choices" in reply and len(reply["choices"]) > 0:
             messages.append(dict(reply["choices"][0]["message"]))
             response["reply"] = reply["choices"][0]["message"]["content"].strip()
-
-        print(messages)
         
     # Return response
     return jsonify(response)
