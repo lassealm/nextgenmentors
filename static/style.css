@@ -1,0 +1,70 @@
+body {
+    background-image: url("../static/2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #545454;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+div.chat {
+    width: 625px;
+    max-width: 625px;
+    min-width: 625px;
+    background-color: #eee;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    border: 1px solid #888;
+
+}
+
+div.reply {
+    width: 610px;
+    max-width: 610px;
+    min-width: 610px;
+    max-height: 500px;
+    background-color: #ddd;
+    font-family: Arial, sans-serif;
+    padding: 5px;
+    overflow-y: scroll;
+}
+
+span.question {
+    font-family: Arial, sans-serif;
+    color: #068b05;
+    font-size: 14px;
+}
+
+span.reply {
+    font-family: Arial, sans-serif;
+    color: #0a0af5;
+    font-size: 14px;
+}
+
+span.header {
+    font-family: Arial, sans-serif;
+    color: #545454;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 550px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #545454;
+}
+
+button.icon {
+    background-color: #153725;
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 6px 2px;
+    border-radius: 4px;
+}

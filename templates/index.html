@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>NextGen Mentors</title>
+        <link rel="stylesheet" href="../static/style.css">
+        <script src="../static/logic.js"></script>
+    </head>
+    <body onload="init()">
+
+        <div id="chat" class="chat">
+            <img src="../static/logo.png" height=60>
+            <div id="history" class="reply">
+
+            </div>
+            <table><tr>
+            <td><textarea id="q" rows=2 name="q"></textarea>&nbsp;&nbsp;</td>
+            <td>
+                <button class='icon' onclick="javascript:make_post_request('ask', ask, 'q');">&gt;</button>
+                <button class='icon' onclick="javascript:init();">X</button>
+            </td>
+            </tr></table>
+        </div>
+    </body>
+</html>
